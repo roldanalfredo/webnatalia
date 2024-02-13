@@ -7,62 +7,70 @@
 html{
     scroll-behavior: smooth;
 }
-#servicios{
-    background: linear-gradient(rgba(0,0,0,.8), rgba(0, 0, 0, .5)), url("../img/servicios.jpg");
-    background-size: cover;
-    background-position: center center;
-    color: #fff;
-}
+
 #inicio{
     background: linear-gradient(rgba(0,0,0,.8), rgba(0, 0, 0, .5)), url("../img/portada.jpg");
     background-size: cover;
     background-position: center center;
     color: #fff;
+    width: 100%;
+    /* height: 50vh; */
+    margin-top: 10vh;
+    margin-bottom: 110px;
+
 }
 .inicio .contenido-seccion{
-    max-width: 1000px;
-    margin: auto;
+    max-width: 100%;
+    /* margin: auto; */
     text-align: center;
-    padding: 0 10px;
-}
-.inicio .contenido-seccion header{
-    padding: 30px;
 }
 
-.inicio .contenido-seccion header nav{
+.perfil{
+    margin: 0 20px;
+}
+
+
+header{
+    padding: 0.1px;
+
+}
+
+header nav{
+    display: flex;
+    justify-content: right;
+    text-align: center;
     position: fixed;
-    margin-left: 60px;
-    background-color: #940253;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: left;
+    padding: 10px;
+    background-color: #0b4683;
+    width: 100%;
     z-index: 99;
 }
-.inicio .contenido-seccion header nav a{
-    display: block;
+
+header nav a{
+    display: inline-block;
     color: #fff;
     text-decoration: none;
     text-align: center;
-    margin-bottom: 10px;
     padding: 5px;
     font-weight: bold;
 }
-.inicio .contenido-seccion header .logo{
-    font-weight: bold;
-    font-size: 2.5rem;
-    font-family: "yellowtail";
-    text-shadow: 0 0 35px #fff;
+
+header nav .redes-nav {
+    margin-right: 50px;
 }
-.inicio .contenido-seccion header .logo .color{
-    color: #940253;
-    font-family: "yellowtail";
+
+header nav .redes-nav a{
+    margin-left: 20px;
+    
 }
-.inicio .contenido-seccion header .nav:hover{
+
+header .nav a:hover{
     box-shadow: 0 0 35px #fff;
     transition: .3s;
 }
 .inicio .contenido-seccion .info{
-    padding-bottom: 130px;
+    padding-bottom: 95px;
+    
 }
 .inicio .contenido-seccion .info h1{
     font-size: 3rem;
@@ -76,14 +84,15 @@ html{
     letter-spacing: 2px;
 }
 .inicio .contenido-seccion .info .redes{
-    margin: 20px 0;
+    margin: 10px;
+    
 }
 .inicio .contenido-seccion .info .redes a{
     display: inline-block;
     text-decoration: none;
-    background-color: #000;
-    color: #940253;
-    border: 1px solid #940253;
+    background-color: #fff;
+    color: #0b4683;
+    border: 1px solid #0b4683;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -93,7 +102,7 @@ html{
 }
 .inicio .contenido-seccion .info .redes a:hover{
     color: #fff;
-    background-color: #940253;
+    background-color: #0b4683;
     box-shadow: 0 0 20px #fff;
 }
 .inicio .contenido-seccion .foto{
@@ -102,41 +111,25 @@ html{
 .inicio .contenido-seccion .foto img{
     max-width: 200px;
     border-radius: 50%;
-    border: 5px solid #940253;
+    border: 5px solid #0b4683;
     position: absolute;
     left: 50%;
     top: -100px;
     transform: translateX(-50%);
 }
-.perfil{
-    background-color: #e6e6e6;
-    padding: 140px 0 100px 0;
-    text-align: center;
+
+.card{
+    position: static;
 }
-.perfil .contenido-seccion{
-    max-width: 1000px;
-    margin: auto;
-    padding: 0;
-    
-    height: auto;
-    box-shadow: 0px 0px 10px #940253;
-    border-radius: 10px;
-    padding: 50px 0px;
+
+.servicios{
+    margin-top: 50px;
 }
-.perfil .contenido-seccion h2{
-    text-transform: uppercase;
-    font-size: 30px;
-}
-.perfil .contenido-seccion p{
-    max-width: 700px;
-    margin: auto;
-    color: #666;
-    font-size: 20px;
-}
+
 .servicios .titulo-seccion{
     text-transform: uppercase;
     font-size: 40px;
-    margin-top: 140px;
+    margin-top: 10px;
     text-align: center;
     font-weight: bold;
     color: #940253;
@@ -145,15 +138,16 @@ html{
 }
 .bloque-servicios{
     display: flex;
-    justify-content: space-evenly;
     text-align: center;
-    height: auto;
+    margin: 0 20px;
+
 }
 .servicios .bloque{
-    margin: 30px;
+    margin: 30px 10px;
     box-shadow: 0px 0px 10px #940253;
     border-radius: 10px;
     padding: 50px;
+    flex-basis: 50%;
 }
 .servicios .bloque h2{
     text-transform: uppercase;
@@ -164,12 +158,93 @@ html{
     color: #666;
     font-size: 20px;
 }
+
+
+
 .inicio .contenido-seccion header nav a:hover{
     border-radius: 10px;
     box-shadow: 0 0 20px #fff;
     transition: .3s;
 }
+
+.foto-perfil {
+    border: 5px solid #940253;
+}
+
+.formulario-content{
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.formulario{
+    margin: 50px 20px 10px 20px;
+    padding: 20px 30PX;
+    background-color: #0b4683;
+    border-radius: 25px;
+    flex-basis: 30%;
+}
+
+.formulario h2 {
+    color: #f4f6f9;
+    margin-bottom: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+label{
+    color: #f4f6f9;
+    /* margin-bottom: 10px; */
+    /* font-size: 20px; */
+}
+
+input, textarea{
+    padding: 5px 14px;
+    background-color: #333646;
+    border: 0;
+    /* font-size: 18px; */
+    color: #f4f6f9;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+:focus{
+    outline: 1px solid #1e92e9;
+}
+
+.btn{
+    background-color: #1e92e9;
+    width: 150px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #219bf9;
+}
+
+
 .active{
     border-radius: 10px;
     box-shadow: 0 0 20px #fff;
+}
+
+/* @media only screen and (max-width: 380px) {
+    #inicio {
+        margin-bottom: 100;
+    }
+} */
+
+@media(max-width:991px){
+    form{
+        width: 100%;    
+    }
+    .formulario{
+        flex-basis: 100%;
+    }
 }
