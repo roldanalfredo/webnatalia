@@ -131,9 +131,9 @@ header .nav a:hover{
     margin-top: 10px;
     text-align: center;
     font-weight: bold;
-    color: #940253;
+    color: #0b4683;
     letter-spacing: 10px;
-    box-shadow: 0px 5px 10px rgba(148, 2, 82, 0.3);
+    box-shadow: 0px 5px 10px #0b4683;
 }
 .bloque-servicios{
     display: flex;
@@ -143,7 +143,7 @@ header .nav a:hover{
 }
 .servicios .bloque{
     margin: 30px 10px;
-    box-shadow: 0px 0px 10px #940253;
+    box-shadow: 0px 0px 10px #0b4683;
     border-radius: 10px;
     padding: 50px;
     flex-basis: 50%;
