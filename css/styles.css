@@ -25,7 +25,7 @@ html{
 }
 
 .perfil{
-    margin: 0 20px;
+    margin: 0 20px 50px 20px;
 }
 
 
@@ -42,7 +42,7 @@ header nav{
     padding: 10px;
     background-color: #0b4683;
     width: 100%;
-    z-index: 99;
+    z-index: 1;
 }
 
 header nav a{
@@ -130,19 +130,39 @@ header .nav a:hover{
     font-size: 40px;
     margin-top: 10px;
     text-align: center;
+    background-color: #fff;
     font-weight: bold;
     color: #0b4683;
     letter-spacing: 10px;
     box-shadow: 0px 5px 10px #0b4683;
 }
+
+.servicios .titulo-bloque{
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    background-color: #0b4683;
+    margin: 30px 30px 0px 30px;
+    padding: 20px;
+}
+
+.servicios .titulo-bloque a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #fff;
+    padding: 0 8px;
+}
+
 .bloque-servicios{
     display: flex;
+    flex-direction: column;
     text-align: center;
-    margin: 0 20px;
+    margin: 20px;
 
 }
-.servicios .bloque{
-    margin: 30px 10px;
+.servicios .bloque{    
+    margin: 10px 10px;
     box-shadow: 0px 0px 10px #0b4683;
     border-radius: 10px;
     padding: 50px;
@@ -150,7 +170,7 @@ header .nav a:hover{
 }
 .servicios .bloque h2{
     text-transform: uppercase;
-    font-size: 30px;
+    /* font-size: 30px; */
     margin-bottom: 20px;
 }
 .servicios .bloque p{
@@ -174,6 +194,7 @@ header .nav a:hover{
 
     display: flex;
     justify-content: center;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 
@@ -233,11 +254,9 @@ input, textarea{
     box-shadow: 0 0 20px #fff;
 }
 
-/* @media only screen and (max-width: 380px) {
-    #inicio {
-        margin-bottom: 100;
-    }
-} */
+contacto{
+    margin-top: 50px;
+}
 
 @media(max-width:991px){
     form{
@@ -245,5 +264,17 @@ input, textarea{
     }
     .formulario{
         flex-basis: 100%;
+    }
+    .servicios .titulo-bloque{
+        flex-direction: column;
+    }
+
+    .servicios .titulo-bloque a{
+        text-align: center;
+        padding: 0px 10px;
+        border: 0px;
+    }
+    #borde{
+        border-top: 1px solid #fff;
     }
 }
