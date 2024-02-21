@@ -192,10 +192,124 @@ header .nav a:hover{
 PERFIL
 ****************************************************************** */
 
-
 .foto-perfil {
     border: 5px solid #940253;
 }
+
+.card-wrap{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+
+img{
+    max-width: 100%;
+    object-fit: cover;
+    background-blend-mode: darken;
+}
+
+.card{
+    position: relative;
+    max-width: 350px;
+    width: 100%;
+    height: 400px;
+    background: #f8f8f8;
+    /* border-radius: 20px; */
+    margin: 3rem;
+    box-shadow: 0 0 12px #d7d7d7;
+    text-align: left;
+    transition: 300ms;
+}
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    color: #f3f3f3;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+.header-card img{
+    border-radius: 8px 8px 0 0;
+    max-height: 200px;
+    height: 200px;
+    width: 100%;
+    
+}
+
+.imagen-frente{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 0;
+    right: 0;
+    background: #1f3d4704;
+    backdrop-filter: blur(5px);
+}
+
+.imagen h3{
+    position: absolute;
+    font-size: 1.5rem;
+    color: #f3f3f3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+/* .imagen::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 200px;
+
+    background-color: rgba(0, 0, 0, 0.7);
+} */
+
+.categoria-card{
+    margin-top: 1rem; 
+
+}
+.categoria-card span{
+    background: #25c4d8;
+    color: #fff;
+    padding: .2rem .5rem;
+    border-radius: 8px;
+}
+
+.card footer{
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+
 
 
 
