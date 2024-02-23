@@ -8,6 +8,11 @@ html{
     scroll-behavior: smooth;
 }
 
+.inicio-body{
+    min-width: 440px;
+}
+
+
 #inicio{
     background: linear-gradient(rgba(0,0,0,.8), rgba(0, 0, 0, .5)), url("../img/portada.jpg");
     background-size: cover;
@@ -117,12 +122,155 @@ header .nav a:hover{
     transform: translateX(-50%);
 }
 
+
+
+/* *******************************************
+servicios
+******************************************* */
+
+
 .card{
     position: static;
 }
 
-.servicios{
-    margin-top: 50px;
+.servicios1{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    /* width: 100vw; */
+}
+
+.servicios-lista{
+    max-width: 1000px;
+    margin-top: 60px;
+    /* border: 1px solid red; */
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 4fr;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.servicios-tarjeta{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.servicios-descripcion{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 100%;
+    background: #f8f8f8;
+    border-radius: 20px;
+    box-shadow: 0 0 12px #d7d7d7;
+    transition: .3s;
+}
+
+.servicios-descripcion p{
+    margin: 20px;
+}
+
+.servicio-imagen{
+    text-align: center;
+    }
+
+.servicio-card{
+    position: relative;
+    max-width: 200px;
+    width: 100%;
+    /* height: 100px; */
+    background: #f8f8f8;
+    border-radius: 20px;
+    box-shadow: 0 0 12px #d7d7d7;
+    text-align: left;
+    transition: 300ms;
+}
+
+.servicio-card .servicio-face{
+    width: 100%;
+    height: 100%;
+    min-width: 200px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+
+
+.servicio-header-card img{
+    /* border-radius: 8px 8px 0 0; */
+    /* max-height: 200px; */
+    /* object-fit: cover; */
+    filter: invert(18%) sepia(98%) saturate(1372%) hue-rotate(191deg) brightness(92%) contrast(93%);
+    height: 100px;
+}
+
+
+
+.servicio-imagen-frente{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    right: 0;
+    background: #1f3d4704;
+    backdrop-filter: blur(5px);
+}
+
+.servicio-imagen h3{
+    position: absolute;
+    color: #f3f3f3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.servicio-categoria-card{
+    margin-top: 1rem; 
+
+}
+.servicio-categoria-card span{
+    background: #D69510;
+    color: #fff;
+    padding: .2rem .5rem;
+    border-radius: 8px;
+}
+
+.servicio-card footer{
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.servicio-card:hover, .servicios-descripcion:hover{
+
+    transform: scale(1.02);
+    background-color: #d7d7d788;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.servicios-body{
+    min-width: 440px;
 }
 
 .servicios .titulo-seccion{
@@ -159,7 +307,7 @@ header .nav a:hover{
     flex-direction: column;
     text-align: center;
     margin: 20px;
-
+    display: none;
 }
 .servicios .bloque{    
     margin: 10px 10px;
@@ -191,6 +339,10 @@ header .nav a:hover{
 /* ******************************************************************
 PERFIL
 ****************************************************************** */
+.perfil-body{
+    min-width: 440px;
+}
+
 
 .foto-perfil {
     border: 5px solid #940253;
@@ -200,7 +352,7 @@ PERFIL
     margin-top: 70px;
     display: flex;
     justify-content: center;
-    /* flex-wrap: wrap; */
+    align-items: center;
 }
 
 
@@ -214,6 +366,7 @@ img{
     position: relative;
     max-width: 350px;
     width: 100%;
+    min-width: 250px;
     height: 400px;
     background: #f8f8f8;
     /* border-radius: 20px; */
@@ -311,7 +464,9 @@ img{
 
 
 
-
+.contacto-body{
+    min-width: 440px;
+}
 
 .formulario-content{
 
@@ -400,4 +555,16 @@ contacto{
     #borde{
         border-top: 1px solid #fff;
     }
+    .servicios-lista{
+        grid-template-columns: 1fr;
+        margin: 0 20px;
+    }
+    .servicios-tarjeta{
+        margin-top: 30px;
+    }
+
+    .card-wrap{
+        flex-direction: column;
+    }
+
 }
