@@ -9,7 +9,8 @@ html{
 }
 
 .inicio-body{
-    min-width: 440px;
+    width: 100vw;
+    min-width: 350px;
 }
 
 
@@ -19,6 +20,7 @@ html{
     background-position: center center;
     color: #fff;
     width: 100%;
+    height: 500px;
     margin-top: 10vh;
     margin-bottom: 110px;
 
@@ -65,6 +67,7 @@ header nav .redes-nav {
 
 header nav .redes-nav a{
     margin-left: 20px;
+
     
 }
 
@@ -77,7 +80,7 @@ header .nav a:hover{
     
 }
 .inicio .contenido-seccion .info h1{
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 5px;
 }
 .inicio .contenido-seccion .info h2{
@@ -108,18 +111,25 @@ header .nav a:hover{
     color: #fff;
     background-color: #0b4683;
     box-shadow: 0 0 20px #fff;
+    transform: scale(1.3);
 }
 .inicio .contenido-seccion .foto{
     position: relative;
-}
+    transition: 0.5s;
+    }
 .inicio .contenido-seccion .foto img{
     max-width: 200px;
     border-radius: 50%;
     border: 5px solid #0b4683;
     position: absolute;
     left: 50%;
-    top: -100px;
+    top: 100px;
     transform: translateX(-50%);
+}
+
+.inicio .contenido-seccion .foto:hover{
+    transform: scale(1.1);
+    /* transform: translateX(-50%); */
 }
 
 
@@ -139,7 +149,7 @@ servicios
     align-items: center;
     justify-content: center;
     /* height: 100vh; */
-    /* width: 100vw; */
+    width: 100vw;
 }
 
 .servicios-lista{
@@ -233,7 +243,8 @@ servicios
     margin-top: 3rem;
 }
 .servicio-categoria-card{
-    margin-top: 1rem; 
+    margin-top: 1rem;
+    text-align: center;
 
 }
 .servicio-categoria-card span{
@@ -270,7 +281,7 @@ servicios
 
 
 .servicios-body{
-    min-width: 440px;
+    /* min-width: 440px; */
 }
 
 .servicios .titulo-seccion{
@@ -340,7 +351,7 @@ servicios
 PERFIL
 ****************************************************************** */
 .perfil-body{
-    min-width: 440px;
+    /* min-width: 440px; */
 }
 
 
@@ -447,7 +458,7 @@ img{
 
 }
 .categoria-card span{
-    background: #25c4d8;
+    background: #D69510;
     color: #fff;
     padding: .2rem .5rem;
     border-radius: 8px;
@@ -465,7 +476,7 @@ img{
 
 
 .contacto-body{
-    min-width: 440px;
+    /* min-width: 440px; */
 }
 
 .formulario-content{
@@ -536,7 +547,7 @@ contacto{
     margin-top: 50px;
 }
 
-@media(max-width:991px){
+@media(max-width:900px){
     form{
         width: 100%;    
     }
@@ -566,5 +577,7 @@ contacto{
     .card-wrap{
         flex-direction: column;
     }
+    header nav .redes-nav a{
+        margin-left: 0px;
 
 }
