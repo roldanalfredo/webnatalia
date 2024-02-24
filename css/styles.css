@@ -170,7 +170,7 @@ servicios
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
 }
 
@@ -215,6 +215,7 @@ servicios
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 
 .servicio-card .servicio-face{
@@ -574,6 +575,9 @@ contacto{
     }
     .servicios-tarjeta{
         margin-top: 30px;
+    }
+    .servicios-descripcion{
+        margin-top: 20px;
     }
 
     .card-wrap{
