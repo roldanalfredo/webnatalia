@@ -280,9 +280,7 @@ servicios
 
 
 
-.servicios-body{
-    /* min-width: 440px; */
-}
+
 
 .servicios .titulo-seccion{
     text-transform: uppercase;
@@ -350,9 +348,7 @@ servicios
 /* ******************************************************************
 PERFIL
 ****************************************************************** */
-.perfil-body{
-    /* min-width: 440px; */
-}
+
 
 
 .foto-perfil {
@@ -475,9 +471,6 @@ img{
 
 
 
-.contacto-body{
-    /* min-width: 440px; */
-}
 
 .formulario-content{
 
