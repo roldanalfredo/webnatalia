@@ -321,7 +321,7 @@ img {
 .perfil-header-card .png {
     /* filter: invert(23%) sepia(85%) saturate(5950%) hue-rotate(330deg) brightness(89%) contrast(85%); */
     filter: invert(62%) sepia(5%) saturate(5596%) hue-rotate(308deg) brightness(92%) contrast(92%);
-    width: 50px;
+    width: 30%;
     /* background-color: #d3215d; */
 }
 
