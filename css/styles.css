@@ -685,10 +685,6 @@ textarea {
     header nav .redes-nav a {
         margin-left: 0px;
     }
-
-}
-
-@media(max-width:400px) {
     .servicios-pre{
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -727,6 +723,5 @@ textarea {
         width: 100%;
 
     }
-
 
 }
