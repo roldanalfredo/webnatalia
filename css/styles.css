@@ -733,8 +733,14 @@ textarea {
     }
     .perfil-lista{
         grid-template-columns: 1fr;
-        margin: 70px 10px;
+        margin: 20px 10px;
+        gap: 5px;
     }
+
+    .perfil-header-card .png{
+        margin-top: 40px;
+    }
+
 
 
 }
