@@ -170,14 +170,18 @@ servicios
 
 
 .lado-color img {
-    width: 50%;
+    width: 70%;
     margin-top: 50px;
 }
 
 .lado-color {
     width: 100%;
     height: 100%;
-    background-color: #a5bdc1;
+    /* background-color: #1b1b318e; */
+    /* background: linear-gradient(rgba(165, 189, 193, .8), rgba(165, 189, 193, .8)), url("../img/Consultoria\ 5.jpg"); */
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../img/nota\ rosa.jpg");
+    background-position: right top;
+    background-size: 130%;
 }
 
 
@@ -233,8 +237,9 @@ servicios
 
 .servicios-bloque {
     display: flex;
-    min-height: 90vh;
+    /* min-height: 90vh; */
     flex-direction: row;
+    align-items: center;
 }
 
 .servicios-texto {
@@ -247,7 +252,7 @@ servicios
 }
 
 .servicios-titulo h2 {
-    margin: 60px 0;
+    margin: 60px 0 0 0;
     font-size: 40px;
     color: #606060;
 }
@@ -314,13 +319,16 @@ img {
 }
 
 .perfil-header-card .png {
-    /* filter: invert(18%) sepia(98%) saturate(1372%) hue-rotate(191deg) brightness(92%) contrast(93%); */
-    width: 100%;
-    background-color: #d3215d;
+    /* filter: invert(23%) sepia(85%) saturate(5950%) hue-rotate(330deg) brightness(89%) contrast(85%); */
+    filter: invert(62%) sepia(5%) saturate(5596%) hue-rotate(308deg) brightness(92%) contrast(92%);
+    width: 50px;
+    /* background-color: #d3215d; */
 }
 
 .perfil-descripcion{
-    background-color: #a5bdc1;
+    /* background-color: #a5bdc1; */
+    border: 1px solid #e3747a;
+    border-radius: 10px;
     padding: 0 20px;
     height: 100%;
 }
@@ -330,11 +338,11 @@ img {
 }
 
 .perfil-categoria-card{
-    background-color: #d3215d;
+    /* background-color: #d3215d; */
 }
 
 .perfil-categoria-card span{
-    font-weight: 800;
+    font-weight: 600;
 }
 
 /* .perfil-tarjeta {
@@ -723,5 +731,10 @@ textarea {
         width: 100%;
 
     }
+    .perfil-lista{
+        grid-template-columns: 1fr;
+        margin: 70px 10px;
+    }
+
 
 }
