@@ -7,7 +7,7 @@
 
 html {
     scroll-behavior: smooth;
-    max-width: 1220px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -26,14 +26,16 @@ html {
     background-position: center center;
     color: #fff;
     width: 100%;
-    max-width: 1220px;
-    height: 500px;
+    max-width: 1200px;
+    height: 100%;
     margin-top: 54px;
     margin-bottom: 110px;
 
 }
 
 .inicio .contenido-seccion {
+    position: relative;
+    height: 300px;
     max-width: 100%;
     margin: auto;
     text-align: center;
@@ -53,7 +55,7 @@ header nav {
     justify-content: right;
     text-align: center;
     position: fixed;
-    padding: 10px;
+    padding: 10px 0;
     background-color: #e3747a;
     max-width: 1200px;
     width: 100%;
@@ -85,20 +87,20 @@ header .nav a:hover {
 }
 
 .inicio .contenido-seccion .info {
-    padding-bottom: 95px;
+    /* padding-bottom: 95px; */
 
 }
 
 .inicio .contenido-seccion .info h1 {
     color: #fff;
     font-size: 3rem;
-    margin: 20px 0;
+    margin: 0px 0;
     letter-spacing: 5px;
 }
 
 .inicio .contenido-seccion .info h2 {
     color: #fff;
-    padding: 10px;
+    padding: 0px;
     font-weight: normal;
     font-size: 20px;
     margin-top: -10px;
@@ -106,7 +108,7 @@ header .nav a:hover {
 }
 
 .inicio .contenido-seccion .info .redes {
-    margin: 40px 20px 0 0;
+    margin: 0px 0px 0 0;
 
 }
 
@@ -118,11 +120,14 @@ header .nav a:hover {
     border: 1px solid #e3747a;
     border-radius: 50%;
     width: 40px;
+    font-size: 1.3rem;
     height: 40px;
     line-height: 40px;
     margin: 0 5px;
     transition: .3s;
 }
+
+
 
 .inicio .contenido-seccion .info .redes a:hover {
     color: #fff;
@@ -132,21 +137,21 @@ header .nav a:hover {
 }
 
 .inicio .contenido-seccion .foto {
-    position: relative;
-    background-color: #d3215d;
+    position: absolute;
+    /* background-color: #d3215d; */
     height: 100%;
     width: 100%;
     transition: 0.5s;
 }
 
 .inicio .contenido-seccion .foto img {
+    position: absolute;
     max-width: 200px;
     border-radius: 50%;
     border: 5px solid #e3747a;
-    position: absolute;
-    left: 50%;
-    top: -20px;
-    transform: translateX(-50%);
+    /* left: 50%; */
+    top: 20px;
+    transform: translateX(-49%);
 }
 
 .inicio .contenido-seccion .foto:hover {
@@ -179,7 +184,7 @@ servicios
 
 
 .servicios-pre {
-    height: 95vh;
+    height: 90vh;
     max-height: 95vh;
     margin-top: 54px;
     display: grid;
@@ -247,10 +252,9 @@ servicios
     color: #606060;
 }
 
-/* 
-.servicios-lista {
+ .servicios-lista {
     margin-top: 200px;
-} */
+}
 
 
 
@@ -571,17 +575,21 @@ CONTACTO
 ******************************************
 */
 
+.contacto-body{
+    min-height: 90vh;
+}
+
 
 .formulario-content {
 
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .formulario {
-    margin: 50px 20px 10px 20px;
+    margin: 50px 0px 0px 0px;
     padding: 20px 30PX;
     background-color: #e3747a;
     border-radius: 25px;
@@ -644,12 +652,13 @@ textarea {
 
 
 .footer{
-    position: absolute;
     width: 100%;
     max-width: 1200px;
-    height: 60px;
+    height: 50px;
     background-color: #e3747a;
-    bottom: 0;
+    position: absolute;
+    bottom: 0px;
+
 }
 
 .footer-perfil{
@@ -676,5 +685,48 @@ textarea {
     header nav .redes-nav a {
         margin-left: 0px;
     }
+
+}
+
+@media(max-width:400px) {
+    .servicios-pre{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "grid-1"
+        "grid-2"
+        "grid-4"
+        "grid-3";
+    }
+    .grid-1{
+        grid-area: grid-1;
+    }
+    .grid-2{
+        grid-area: grid-2;
+    }
+    .grid-3{
+        grid-area: grid-3;
+    }
+    .grid-4{
+        grid-area: grid-4;
+    }
+    .servicios-bloque{
+        flex-direction: column;
+        margin: 0 10px;
+    }
+    .servicios-lista{
+        margin-top: 700px;
+    }
+    .mas-info{
+        margin-bottom: 50px;
+    }
+    .lado-color{
+        min-height: 30vh;
+    }
+    .servicios-texto{
+        margin: 0px;
+        width: 100%;
+
+    }
+
 
 }
