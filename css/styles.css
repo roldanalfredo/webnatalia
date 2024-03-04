@@ -727,13 +727,13 @@ textarea {
         min-height: 30vh;
     }
     .servicios-texto{
-        margin: 0px;
+        margin: 1px;
         width: 100%;
 
     }
     .perfil-lista{
         grid-template-columns: 1fr;
-        margin: 70px 10px;
+        margin: 100px 10px;
         gap: 5px;
     }
 
