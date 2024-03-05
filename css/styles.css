@@ -251,6 +251,10 @@ servicios
     font-weight: 600;
 }
 
+.servicios-texto .bullet-chico{
+    color: #d3215d;
+}
+
 .servicios-texto p i{
     color: #d3215d;
 }
