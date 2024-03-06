@@ -168,13 +168,23 @@ servicios
     margin: 0px;
 }
 
-
-.lado-color img {
-    width: 70%;
-    margin-top: 50px;
+.contenido-servicios h1{
+    text-align: center;
 }
 
+.contenido-servicios h2{
+    text-align: center;
+}
+
+.servicios-pre-1 p{
+    text-align: center;
+}
+
+
+
 .lado-color {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 100%;
     /* background-color: #1b1b318e; */
@@ -182,8 +192,13 @@ servicios
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../img/nota\ rosa.jpg");
     background-position: right top;
     background-size: 130%;
+    align-items: center;
 }
 
+.lado-color img {
+    max-height: 80%;
+
+}
 
 
 
@@ -314,9 +329,10 @@ img {
 
 .perfil-lista {
     max-width: 1000px;
-    margin-top: 60px;
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
     display: grid;
     gap: 15px;
     grid-template-columns: 1fr 4fr;
@@ -351,6 +367,14 @@ img {
 
 .perfil-categoria-card span{
     font-weight: 600;
+}
+
+.footer-perfil{
+    width: 100%;
+    max-width: 1200px;
+    background-color: #e3747a;
+    height: 60px;
+    bottom: 0;
 }
 
 /* .perfil-tarjeta {
@@ -605,7 +629,7 @@ CONTACTO
 }
 
 .formulario {
-    margin: 50px 0px 0px 0px;
+    margin: 50px 0px 50px 0px;
     padding: 20px 30PX;
     background-color: #e3747a;
     border-radius: 25px;
@@ -680,7 +704,25 @@ textarea {
 
 }
 
+.footer-contacto{
+    position: absolute;
+    width: 100%;
+    max-width: 1200px;
+    height: 50px;
+    background-color: #e3747a;
+    bottom: 0;
 
+}
+
+.footer-servicios{
+    position: absolute;
+    width: 100%;
+    max-width: 1200px;
+    height: 50px;
+    background-color: #e3747a;
+
+
+}
 
 
 
@@ -697,13 +739,7 @@ textarea {
 }
 
 
-.footer-perfil{
-    width: 100%;
-    max-width: 1200px;
-    background-color: #e3747a;
-    height: 60px;
-    margin-top: 20px;
-}
+
 
 /* contacto{
     margin-top: 50px;
