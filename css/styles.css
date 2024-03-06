@@ -663,13 +663,13 @@ textarea {
 
 .whats{
     position: fixed;
-    bottom: 10px;
+    bottom: 30px;
     right: 10px;
     margin-left: 20px;
     width: 60px;
     height: 60px;
     text-align: center;
-
+    z-index: 100;
 }
 .whats a{
     display: block;
@@ -695,6 +695,7 @@ textarea {
     bottom: 0px;
 
 }
+
 
 .footer-perfil{
     width: 100%;
