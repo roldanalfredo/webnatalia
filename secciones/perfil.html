@@ -1,167 +1,132 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/styles.css">
-  <title>Natalia Petrilli</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perfil profesional de Natalia Petrilli. Licenciada en Psicología (UBA), especialista en TCC, Coach Organizacional. Más de 15 años de experiencia.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+    <title>Perfil - Natalia Petrilli</title>
 </head>
 
-<body class="perfil-body">
-  <!-- <section class="inicio" id="perfil"> -->
-      <header>
+<body>
+    <header>
         <nav id="nav" class="nav">
-          <div class="redes-nav">
-            <a href="../index.html">Inicio</a>
-            <a class="active" href="../secciones/perfil.html">Perfil</a>
-            <a href="../secciones/servicios.html"><i></i>Servicios</a>
-            <a href="../secciones/contacto.html"><i class="fa-regular fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/natalia-petrilli-hr/" target="_blank"><i
-                class="fa-brands fa-linkedin"></i></a>
-            <a href="https://wa.me/541167917254?text=¡Hola Natalia! Me contacto para consultarte por%20" target="_blank"><i
-                class="fa-brands fa-whatsapp"></i></a>
-          </div>
-
+            <a href="../index.html" class="nav-logo">N<span>P</span></a>
+            <div class="redes-nav">
+                <a href="../index.html">Inicio</a>
+                <a class="active" href="../secciones/perfil.html">Perfil</a>
+                <a href="../secciones/servicios.html">Servicios</a>
+                <a href="../secciones/contacto.html" aria-label="Contacto"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/natalia-petrilli-hr/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://wa.me/541167917254?text=¡Hola Natalia! Me contacto para consultarte por%20" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
         </nav>
+    </header>
 
-      </header>
-    <div class="contenido-seccion">
-  </section>
-  <section class="perfil">
-    <div class="perfil-lista">
-      <div class="perfil-tarjeta">
-        <article class="perfil-card">
-          <div class="perfil-face perfil-front">
-            <header class="perfil-header-card">
-              <div class="perfil-imagen">
-                <img src="../img/perfilcuadrado.png" class="png" alt="">
-              </div>
-            </header>
-            <footer class="perfil-footer-card">
-              <div class="perfil-categoria-card">
-                <span>Mi <br> Perfil Profesional</span>
-              </div>
-            </footer>
-          </div>
-        </article>
-      </div>
-      <div class="perfil-descripcion sd1">
-        <p>Soy Natalia, Licenciada en Psicología, y desde hace más de 15 años me impulsa el objetivo de guiar a las
-          personas hacia el bienestar y la funcionalidad en dos áreas clave: la Psicología Clínica y la Psicología
-          Laboral.</p>
-      </div>
-      <div class="perfil-tarjeta">
-        <article class="perfil-card">
-          <div class="perfil-face perfil-front">
-            <header class="perfil-header-card">
-              <div class="perfil-imagen">
-                <img src="../img/FORMACION.png" class="png" alt="">
-              </div>
-            </header>
-            <footer class="perfil-footer-card">
-              <div class="perfil-categoria-card">
-                <span>Mi <br> Formación</span>
-              </div>
-              <div class="perfil-texto-card">
-                <!-- <h3>Lorem, ipsum dolor.</h3> -->
-                <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, nisi!</p> -->
-              </div>
-            </footer>
-          </div>
-        </article>
+    <main>
+        <section class="page-hero">
+            <h1>Sobre Mí</h1>
+            <p>Más de 15 años guiando personas hacia el bienestar</p>
+        </section>
 
+        <section class="perfil-seccion">
+            <div class="perfil-items-wrapper">
+                <div class="perfil-item animate-on-scroll">
+                    <div class="perfil-item-icono">
+                        <div class="icono-circle">
+                            <img src="../img/perfilcuadrado.png" alt="Perfil profesional">
+                        </div>
+                        <span>Mi Perfil Profesional</span>
+                    </div>
+                    <div class="perfil-item-texto">
+                        <p>Soy Natalia, <span class="text-accent">Licenciada en Psicología</span>, y desde hace más de 15 años me impulsa el objetivo de guiar a las personas hacia el bienestar y la funcionalidad en dos áreas clave: la <span class="text-accent">Psicología Clínica</span> y la <span class="text-accent">Psicología Laboral</span>.</p>
+                    </div>
+                </div>
 
-      </div>
-      <div class="perfil-descripcion sd1">
-        <p>Me gradué con honores en la Universidad de Bs As, continué mi recorrido en la carrera de especialización en
-          Terapia Cognitivo Conductual y en Sexología Clínica. Adicionalmente complementé mi formación académica en
-          Relaciones Laborales, me certifiqué como Coach Organizacional y complementé mis estudios en Neuromanagement.
-        </p>
-      </div>
+                <div class="perfil-item animate-on-scroll">
+                    <div class="perfil-item-icono">
+                        <div class="icono-circle">
+                            <img src="../img/FORMACION.png" alt="Formación académica">
+                        </div>
+                        <span>Mi Formación</span>
+                    </div>
+                    <div class="perfil-item-texto">
+                        <p>Me gradué con honores en la <span class="text-accent">Universidad de Buenos Aires</span>, continué mi recorrido en la carrera de especialización en <span class="text-accent">Terapia Cognitivo Conductual</span> y en <span class="text-accent">Sexología Clínica</span>. Adicionalmente complementé mi formación académica en <span class="text-accent">Relaciones Laborales</span>, me certifiqué como <span class="text-accent">Coach Organizacional</span> y complementé mis estudios en <span class="text-accent">Neuromanagement</span>.</p>
+                    </div>
+                </div>
 
+                <div class="perfil-item animate-on-scroll">
+                    <div class="perfil-item-icono">
+                        <div class="icono-circle">
+                            <img src="../img/EXPERIENCIA.png" alt="Experiencia profesional">
+                        </div>
+                        <span>Mi Experiencia</span>
+                    </div>
+                    <div class="perfil-item-texto">
+                        <p>En lo que hace a mi trayectoria clínica, trabajo enriqueciendo mi práctica profesional en equipos interdisciplinarios y en consultorio privado. Mi especialización me ha permitido acompañar a las personas equipándolas de <span class="text-accent">recursos y herramientas de afrontamiento</span> en abordajes con <span class="text-accent">validez científica</span>.</p>
+                        <p>En el ámbito de la psicología laboral, también me desempeño como coach organizacional, brindando <span class="text-accent">asesoramiento estratégico</span> en neuromanagement, desarrollo de habilidades, gestión del clima. Lidero dichos procesos desde los aportes científicos que hacen a la comprensión de la mente y el comportamiento humano, con foco en la <span class="text-accent">salud</span>, el <span class="text-accent">bienestar</span> y la <span class="text-accent">productividad</span> en las organizaciones.</p>
+                    </div>
+                </div>
 
-      <div class="perfil-tarjeta">
-        <article class="perfil-card">
-          <div class="perfil-face perfil-front">
-            <header class="perfil-header-card">
-              <div class="perfil-imagen">
-                <!-- <h3>Atencion psicologica</h3> -->
-                <img src="../img/EXPERIENCIA.png" class="png" alt="">
-              </div>
-            </header>
-            <footer class="perfil-footer-card">
-              <div class="perfil-categoria-card">
-                <span>Mi <br> Experiencia</span>
-              </div>
-              <div class="perfil-texto-card">
-                <!-- <h3>Lorem, ipsum dolor.</h3> -->
-                <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, nisi!</p> -->
-              </div>
-            </footer>
-          </div>
-        </article>
+                <div class="perfil-item animate-on-scroll">
+                    <div class="perfil-item-icono">
+                        <div class="icono-circle">
+                            <img src="../img/COMPROMISO.png" alt="Compromiso profesional">
+                        </div>
+                        <span>Mi Compromiso</span>
+                    </div>
+                    <div class="perfil-item-texto">
+                        <p>Entiendo a la <span class="text-accent">salud mental</span> como el estado de bienestar emocional, psicológico y social que posibilita el afrontamiento de situaciones de la vida diaria, la toma de decisiones asertivas, el establecimiento de vínculos sanos, el poder desarrollarse y ser productivo.</p>
+                        <p>La salud mental impacta en todos y cada uno de los ámbitos de la vida. Mi compromiso con la ciencia y la actualización continua, radica en poder brindar un <span class="text-accent">servicio diferencial</span>, que permita alojar y acompañar con asertividad el proceso de quienes llegan a consulta buscando guía, salud y bienestar.</p>
+                        <p>Considero que la búsqueda de <span class="text-accent">aprendizaje continuo</span>, el <span class="text-accent">compromiso</span> y la <span class="text-accent">dedicación</span> al servicio del otro han sido y son los pilares de mi recorrido profesional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      </div>
-      <div class="perfil-descripcion sd2">
-        <p>En lo que hace a mi trayectoria clínica, trabajo enriqueciendo mi práctica profesional en equipos
-          interdisciplinarios y en consultorio privado. Mi especialización me ha permitido acompañar a las personas
-          equipándolas de recursos y herramientas de afrontamiento en abordajes con validez científica.</p>
-        <p>En el ámbito de la psicología laboral, también me desempeño como coach organizacional, brindando
-          asesoramiento estratégico en neuromanagement, desarrollo de habilidades, gestión del clima. Lidero dichos
-          procesos desde los aportes científicos que hacen a la comprensión de la mente y el comportamiento humano, con
-          foco en la salud, el bienestar y la productividad en las organizaciones.</p>
-      </div>
+        <section class="cta-section">
+            <h3>¿Querés saber más?</h3>
+            <p>Conocé los servicios que ofrezco en psicología clínica y consultoría organizacional.</p>
+            <a href="../secciones/servicios.html" class="btn-primary">Ver Servicios</a>
+        </section>
+    </main>
 
-      <div class="perfil-tarjeta">
-        <article class="perfil-card">
-          <div class="perfil-face perfil-front">
-            <header class="perfil-header-card">
-              <div class="perfil-imagen">
-                <!-- <h3>Atencion psicologica</h3> -->
-                <img src="../img/COMPROMISO.png" class="png" alt="">
-              </div>
-            </header>
-            <footer class="perfil-footer-card">
-              <div class="perfil-categoria-card">
-                <span>Mi <br> Compromiso</span>
-              </div>
-              <div class="perfil-texto-card">
-                <!-- <h3>Lorem, ipsum dolor.</h3> -->
-                <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, nisi!</p> -->
-              </div>
-            </footer>
-          </div>
-        </article>
-
-      </div>
-      <div class="perfil-descripcion sd3">
-        <p>Entiendo a la salud mental como el estado de bienestar emocional, psicológico y social que posibilita el
-          afrontamiento de situaciones de la vida diaria, la toma de decisiones asertivas, el establecimiento de
-          vínculos sanos, el poder desarrollarse y ser productivo.</p>
-        <p>La salud mental impacta en todos y cada uno de los ámbitos de la vida. Mi compromiso con la ciencia y la
-          actualización continua, radica en poder brindar un servicio diferencial, que permita alojar y acompañar con
-          asertividad el proceso de quienes llegan a consulta buscando guía, salud y bienestar.</p>
-        <p>Considero que la búsqueda de aprendizaje continuo, el compromiso y la dedicación al servicio del otro han
-          sido y son los pilares de mi recorrido profesional.</p>
-      </div>
-
-    </div>
-  </section>
     <div class="whats">
-    <a href="https://wa.me/541167917254?text=¡Hola Natalia! Me contacto para consultarte por%20" target="_blank"><i
-      class="fa-brands fa-whatsapp"></i></a>  
-  </div>
-  <footer class="footer-perfil">
+        <span class="whats-tooltip">Escribime por WhatsApp</span>
+        <a href="https://wa.me/541167917254?text=¡Hola Natalia! Me contacto para consultarte por%20" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
 
-  </footer>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>Natalia Petrilli - Lic. en Psicología (UBA) | MN 47721</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/natalia-petrilli-hr/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://wa.me/541167917254?text=¡Hola Natalia! Me contacto para consultarte por%20" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="../secciones/contacto.html" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
 
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
 
-
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+    </script>
 </body>
-
 
 </html>
