@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Natalia Lorena Petrilli</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            color: #2d3748;
+            background: #f7fafc;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%);
+            color: #fff;
+            padding: 48px 56px 40px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 36px;
+        }
+
+        .header-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(255,255,255,0.4);
+            flex-shrink: 0;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .header .subtitle {
+            font-size: 15px;
+            font-weight: 300;
+            opacity: 0.9;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+        }
+
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 13px;
+            font-weight: 400;
+        }
+
+        .contact-row a {
+            color: #bee3f8;
+            text-decoration: none;
+        }
+
+        .contact-row a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .contact-icon {
+            width: 16px;
+            height: 16px;
+            opacity: 0.8;
+        }
+
+        /* Main layout */
+        .main {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 0;
+        }
+
+        .left-col {
+            padding: 40px 40px 40px 56px;
+        }
+
+        .right-col {
+            padding: 40px 56px 40px 24px;
+            background: #f8fafc;
+            border-left: 1px solid #e2e8f0;
+        }
+
+        /* Section titles */
+        .section-title {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #2b6cb0;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #bee3f8;
+        }
+
+        .section {
+            margin-bottom: 36px;
+        }
+
+        /* Experience entries */
+        .exp-entry {
+            margin-bottom: 24px;
+            position: relative;
+            padding-left: 16px;
+            border-left: 2px solid #e2e8f0;
+        }
+
+        .exp-entry:hover {
+            border-left-color: #2b6cb0;
+        }
+
+        .exp-role {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 2px;
+        }
+
+        .exp-company {
+            font-size: 13px;
+            font-weight: 500;
+            color: #4a5568;
+        }
+
+        .exp-date {
+            font-size: 12px;
+            color: #718096;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .exp-desc {
+            font-size: 13px;
+            color: #4a5568;
+            line-height: 1.7;
+        }
+
+        /* Education */
+        .edu-entry {
+            margin-bottom: 16px;
+        }
+
+        .edu-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1a365d;
+        }
+
+        .edu-institution {
+            font-size: 12px;
+            color: #718096;
+        }
+
+        .edu-year {
+            font-size: 11px;
+            font-weight: 600;
+            color: #2b6cb0;
+            margin-bottom: 2px;
+        }
+
+        .edu-note {
+            font-size: 12px;
+            color: #48bb78;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        /* Skills / tags */
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background: #ebf4ff;
+            color: #2b6cb0;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        /* Courses */
+        .course-item {
+            margin-bottom: 12px;
+        }
+
+        .course-name {
+            font-size: 13px;
+            font-weight: 500;
+            color: #2d3748;
+        }
+
+        .course-detail {
+            font-size: 11px;
+            color: #a0aec0;
+        }
+
+        /* Profile text */
+        .profile-text {
+            font-size: 14px;
+            color: #4a5568;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        /* Personal info */
+        .personal-info {
+            font-size: 13px;
+            color: #718096;
+            line-height: 1.8;
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background: #fff;
+                font-size: 12px;
+            }
+            .page {
+                box-shadow: none;
+                max-width: 100%;
+            }
+            .header {
+                padding: 32px 40px 28px;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .left-col {
+                padding: 28px 28px 28px 40px;
+            }
+            .right-col {
+                padding: 28px 40px 28px 16px;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .exp-entry {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- HEADER -->
+        <div class="header">
+            <img src="img/Perfil.jpeg" alt="Natalia Petrilli" class="header-photo">
+            <div class="header-text">
+            <h1>NATALIA LORENA PETRILLI</h1>
+            <div class="subtitle">Licenciada en Psicología | HR Business Partner | Coaching Organizacional</div>
+            <div class="contact-row">
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    +54 9 11 6791-7254
+                </div>
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <a href="mailto:nataliapetrilli@gmail.com">nataliapetrilli@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    <a href="https://www.linkedin.com/in/natalia-petrilli-hr">linkedin.com/in/natalia-petrilli-hr</a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <!-- LEFT COLUMN: Experience -->
+            <div class="left-col">
+
+                <!-- Perfil -->
+                <div class="section">
+                    <div class="section-title">Perfil Profesional</div>
+                    <p class="profile-text">
+                        Licenciada en Psicología (UBA) con formación continua en el área laboral y estudios universitarios en Relaciones Laborales (UnLaM), diplomada en Coaching Organizacional (UdeSA). Experiencia en atención psicológica particular y para empresas. Trayectoria corporativa en RRHH: coordinación de equipos, diagnósticos y análisis de estructura, learning & development, people care & culture, change management y talent acquisition. Realización de psicotécnicos laborales.
+                    </p>
+                </div>
+
+                <!-- Experiencia -->
+                <div class="section">
+                    <div class="section-title">Experiencia Laboral</div>
+
+                    <div class="exp-entry">
+                        <div class="exp-role">Co-Founder</div>
+                        <div class="exp-company">Well&Good — Consultora en RH</div>
+                        <div class="exp-date">Oct 2022 — Actualidad</div>
+                        <div class="exp-desc">
+                            Consultora enfocada en salud organizacional. Conectamos la ciencia con el día a día de las personas en las organizaciones para impulsar espacios de trabajo más saludables y eficientes. Especialistas en Neurociencias, Biología del comportamiento, Psicología cognitiva y Ciencia de datos. Evaluación detallada de problemáticas organizacionales para diseñar y co-crear mejores entornos de trabajo.
+                        </div>
+                    </div>
+
+                    <div class="exp-entry">
+                        <div class="exp-role">HR Business Partner</div>
+                        <div class="exp-company">NX (ex Naranja — Grupo Galicia)</div>
+                        <div class="exp-date">Dic 2018 — Feb 2020</div>
+                        <div class="exp-desc">
+                            Asesoramiento al management regional para cumplimiento de objetivos estratégicos. Desarrollo de soluciones integrales considerando necesidades del negocio y gestión del capital humano. Agente de cambio, análisis de impactos en decisiones estratégicas, detección y gestión de riesgos. Procesos de mapeo de talentos y desarrollo del management. Diseño de comunicaciones estratégicas. Participación en proyectos transversales bajo metodologías ágiles.
+                        </div>
+                    </div>
+
+                    <div class="exp-entry">
+                        <div class="exp-role">Clima y Cultura Organizacional</div>
+                        <div class="exp-company">NX (ex Naranja — Grupo Galicia)</div>
+                        <div class="exp-date">Jul 2015 — Dic 2018</div>
+                        <div class="exp-desc">
+                            Rediseño del proceso integral de gestión de clima. Implementación de mediciones internas (encuestas y entrevistas) y externas (Great Place to Work). Diagnósticos, planes de clima, asesoramientos e intervenciones en equipos y con líderes. Planificación y ejecución de actividades orientadas al desarrollo de competencias de gestión en la línea de conducción.
+                        </div>
+                    </div>
+
+                    <div class="exp-entry">
+                        <div class="exp-role">Gestión del Cambio Organizacional</div>
+                        <div class="exp-company">NX (ex Naranja — Grupo Galicia)</div>
+                        <div class="exp-date">Ene 2014 — Jun 2015</div>
+                        <div class="exp-desc">
+                            Gestión de proyectos de cambio organizacional. Implementación de metodología Lean a nivel macro. Diagnóstico de percepción y monitoreo de adopción del cambio. Revisión y rediseño de herramientas. Estrategia de formación y transformación. Diseño de planes de comunicación. Promoción de la sustentabilidad del cambio organizacional.
+                        </div>
+                    </div>
+
+                    <div class="exp-entry">
+                        <div class="exp-role">Coordinación de RRHH</div>
+                        <div class="exp-company">Tarjeta Naranja Perú (Start Up)</div>
+                        <div class="exp-date">Jul 2012 — Dic 2013</div>
+                        <div class="exp-desc">
+                            Conformación de equipo de trabajo en Start Up con residencia en Lima, Perú. Implementación de procesos de selección externa de mandos medios y altos. Coordinación y evaluación de equipo de selectores. Formación de colaboradores y desarrollo de habilidades en líderes. Diseño de programa de mentoring para management local.
+                        </div>
+                    </div>
+
+                    <div class="exp-entry">
+                        <div class="exp-role">Instructora de Capacitación</div>
+                        <div class="exp-company">NX (ex Naranja — Grupo Galicia)</div>
+                        <div class="exp-date">Jun 2012 — Actualidad</div>
+                        <div class="exp-desc">
+                            Rol de instructora en adición al puesto de RRHH. Planificación y dictado de talleres técnicos y vivenciales a analistas, coordinadores y jefes. Diseño de materias relativas a gestión del cambio, cultura organizacional, feedback, planificación y resolución de problemas.
+                        </div>
+                    </div>
+
+                    <div class="exp-entry">
+                        <div class="exp-role">Reclutamiento y Selección de Personal</div>
+                        <div class="exp-company">NX (ex Naranja — Grupo Galicia)</div>
+                        <div class="exp-date">Oct 2010 — Jul 2012</div>
+                        <div class="exp-desc">
+                            Reclutamiento y selección del desembarco de la empresa en GBA y CABA. Entrevistas por competencias, assessment centers, diseño de informes laborales, talleres de búsqueda laboral, benchmarking.
+                        </div>
+                    </div>
+
+                    <div class="exp-entry">
+                        <div class="exp-role">Desarrollo y Capacitación</div>
+                        <div class="exp-company">Ministerio de Trabajo y Universidad de Morón</div>
+                        <div class="exp-date">Jun 2009 — Oct 2010</div>
+                        <div class="exp-desc">
+                            Diseño de contenidos y dictado de Talleres de Orientación e Inducción al Mundo del Trabajo bajo el Programa de Jóvenes por Más y Mejor Empleo. Obtención de contratos de pasantías. Dictado de talleres en Expo Universidad 2009-2010.
+                        </div>
+                    </div>
+
+                    <div class="exp-entry">
+                        <div class="exp-role">Consultora de RRHH / Ayudante de Cátedra</div>
+                        <div class="exp-company">MS Coach / UBA — Práctica Profesional en RRHH</div>
+                        <div class="exp-date">Mar 2009 — Dic 2009</div>
+                        <div class="exp-desc">
+                            Dictado de talleres dirigidos a estudiantes, graduados y profesionales sobre orientación en carrera laboral, mercado laboral latinoamericano y marketing personal. Supervisión y evaluación de alumnos coordinadores de talleres de Reinserción Laboral desde la UBA.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="right-col">
+
+                <!-- Información Personal -->
+                <div class="section">
+                    <div class="section-title">Información Personal</div>
+                    <div class="personal-info">
+                        41 años<br>
+                        Casada<br>
+                        Argentina
+                    </div>
+                </div>
+
+                <!-- Educación -->
+                <div class="section">
+                    <div class="section-title">Educación</div>
+
+                    <div class="edu-entry">
+                        <div class="edu-year">2019</div>
+                        <div class="edu-title">Diplomatura en Coaching Organizacional</div>
+                        <div class="edu-institution">Universidad de San Andrés</div>
+                    </div>
+
+                    <div class="edu-entry">
+                        <div class="edu-year">2012</div>
+                        <div class="edu-title">Lic. en Relaciones Laborales (3er año)</div>
+                        <div class="edu-institution">Universidad Nacional de La Matanza</div>
+                    </div>
+
+                    <div class="edu-entry">
+                        <div class="edu-year">2008</div>
+                        <div class="edu-title">Licenciatura en Psicología</div>
+                        <div class="edu-institution">Universidad de Buenos Aires</div>
+                        <div class="edu-note">Diploma de honor</div>
+                    </div>
+                </div>
+
+                <!-- Áreas de expertise -->
+                <div class="section">
+                    <div class="section-title">Áreas de Expertise</div>
+                    <div class="tag-list">
+                        <span class="tag">HR Business Partner</span>
+                        <span class="tag">Clima y Cultura</span>
+                        <span class="tag">Change Management</span>
+                        <span class="tag">Talent Acquisition</span>
+                        <span class="tag">Learning & Development</span>
+                        <span class="tag">People Care</span>
+                        <span class="tag">Coaching</span>
+                        <span class="tag">Neurociencias</span>
+                        <span class="tag">Metodologías Ágiles</span>
+                        <span class="tag">Psicotécnicos</span>
+                        <span class="tag">Assessment Center</span>
+                        <span class="tag">Great Place to Work</span>
+                    </div>
+                </div>
+
+                <!-- Formación Complementaria -->
+                <div class="section">
+                    <div class="section-title">Formación Complementaria</div>
+
+                    <div class="course-item">
+                        <div class="course-name">Desarrollo de Mandos Medios de alta performance desde las Neurociencias</div>
+                        <div class="course-detail">INECO — 2023</div>
+                    </div>
+
+                    <div class="course-item">
+                        <div class="course-name">Habilidades Conversacionales</div>
+                        <div class="course-detail">Universidad Siglo XXI — 2018</div>
+                    </div>
+
+                    <div class="course-item">
+                        <div class="course-name">Liderazgo Ágil</div>
+                        <div class="course-detail">Universidad Siglo XXI — 2017</div>
+                    </div>
+
+                    <div class="course-item">
+                        <div class="course-name">Gestión de Proyectos y Metodologías Ágiles</div>
+                        <div class="course-detail">Universidad Siglo XXI — 2017</div>
+                    </div>
+
+                    <div class="course-item">
+                        <div class="course-name">Diplomatura en Evaluaciones Psicolaborales</div>
+                        <div class="course-detail">UCES — 2015</div>
+                    </div>
+
+                    <div class="course-item">
+                        <div class="course-name">Gestión del Talento y Potencial en las Organizaciones</div>
+                        <div class="course-detail">Consultora Mc Talento / Certificación Mercer — 2014</div>
+                    </div>
+
+                    <div class="course-item">
+                        <div class="course-name">Gestión del RRHH</div>
+                        <div class="course-detail">C.C. Lima — 2013</div>
+                    </div>
+
+                    <div class="course-item">
+                        <div class="course-name">La Inteligencia Emocional en el Trabajo</div>
+                        <div class="course-detail">UBA Extensión Universitaria — 2006</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
